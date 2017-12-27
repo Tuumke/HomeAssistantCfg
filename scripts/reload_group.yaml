@@ -1,0 +1,4 @@
+alias: Reload Group
+sequence:
+  - alias: Reload-group
+    service: group.reload

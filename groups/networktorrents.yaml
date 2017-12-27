@@ -1,0 +1,7 @@
+name: Torrents
+icon: mdi:briefcase-download
+entities:
+  - sensor.transmission_active_torrents
+  - sensor.transmission_down_speed
+  - sensor.transmission_up_speed
+  - sensor.transmission_status

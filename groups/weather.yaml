@@ -1,0 +1,9 @@
+name: Weather
+entities:
+  - sensor.weather
+  - sensor.weather_cloudiness
+  - sensor.weather_dewpoint_temperature
+  - sensor.weather_high_clouds
+  - sensor.weather_low_clouds
+  - sensor.weather_medium_clouds
+  - sensor.weather_symbol

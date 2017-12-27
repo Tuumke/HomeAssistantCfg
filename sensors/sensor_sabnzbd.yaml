@@ -1,0 +1,13 @@
+platform: sabnzbd
+name: SabNZBd
+host: web.tuumke.nl
+port: 8080
+api_key: !secret sabnzbd
+monitored_variables:
+  - 'current_status'
+  - 'speed'
+  - 'queue_size'
+  - 'queue_remaining'
+  - 'disk_size'
+  - 'disk_free'
+  - 'queue_count'

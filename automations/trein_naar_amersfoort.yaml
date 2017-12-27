@@ -1,0 +1,26 @@
+id: Notification_trein_naar_Amersfoort
+alias: Vertrektijd trein naar Amersfoort
+trigger:
+  - entity_id: device_tracker.tijmen_mobtijmen
+    event: enter
+    platform: zone
+    zone: zone.StationHarderwijk
+condition:
+  - condition: time
+    after: '06:00:00'
+    before: '07:00:00'
+    weekday:
+    - mon
+    - wed
+    - thu
+    - fri
+action:
+- data_template:
+    message: Vertrektijd {{ states.sensor.harderwijkamersfoort.attributes.departure_time_actual
+      }} vanaf spoor {{ states.sensor.harderwijkamersfoort.attributes.departure_platform
+      }}, aankomst om {{ states.sensor.harderwijkamersfoort.attributes.arrival_time_actual
+      }}. Volgende trein vertrekt om {{ states.sensor.harderwijkamersfoort.attributes.next
+      }}.
+    title: 'Trein naar Amersfoort: {{ states.sensor.harderwijkamersfoort.attributes.status
+      }}.'
+  service: notify.pushbullet

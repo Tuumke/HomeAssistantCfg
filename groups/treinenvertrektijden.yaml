@@ -1,0 +1,5 @@
+name: Trein Vertrektijden
+icon: mdi:train
+entities:
+  - sensor.amersfoortharderwijk
+  - sensor.harderwijkamersfoort

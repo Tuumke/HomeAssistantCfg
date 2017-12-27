@@ -1,0 +1,12 @@
+platform: yr
+name: Weather
+forecast: 24
+monitored_conditions:
+  - temperature
+  - symbol
+  - windDirection
+  - cloudiness
+  - lowClouds
+  - mediumClouds
+  - highClouds
+  - dewpointTemperature

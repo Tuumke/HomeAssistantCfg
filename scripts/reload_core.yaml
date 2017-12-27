@@ -1,0 +1,4 @@
+alias: Reload Core
+sequence:
+  - alias: Reload-Core
+    service: homeassistant.reload_core_config

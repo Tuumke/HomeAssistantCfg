@@ -1,0 +1,5 @@
+name: FritzBoxInfo
+icon: mdi:speedometer
+entities:
+  - sensor.FritzBoxUpload
+  - sensor.FritzBoxDownload

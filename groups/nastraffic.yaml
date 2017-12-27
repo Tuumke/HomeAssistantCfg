@@ -1,0 +1,5 @@
+name: Nas Traffic
+icon: mdi:speedometer
+entities:
+  - sensor.network_down
+  - sensor.network_up

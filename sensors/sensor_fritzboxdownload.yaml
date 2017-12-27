@@ -1,0 +1,13 @@
+platform: template
+sensors:
+  fritzboxdownload:
+    friendly_name: "FritzBox Download"
+    unit_of_measurement: 'MB/s'
+    icon_template: mdi:download
+    value_template: >-
+      {%- set fritzbox_down = (states.sensor.fritz_netmonitor.attributes.transmission_rate_down/(1024*1024)) | default(0) | float -%}
+      {%- if fritzbox_down < 0.1 -%}
+        {{ fritzbox_down | round(2) }}
+      {%- else -%}
+        {{ fritzbox_down | round(1) }}
+      {%- endif -%}

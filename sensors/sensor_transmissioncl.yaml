@@ -1,0 +1,10 @@
+platform: transmission
+host: web.tuumke.nl
+port: 9091
+username: !secret torr_user
+password: !secret torr_pass
+monitored_variables:
+  - 'current_status'
+  - 'download_speed'
+  - 'upload_speed'
+  - 'active_torrents'

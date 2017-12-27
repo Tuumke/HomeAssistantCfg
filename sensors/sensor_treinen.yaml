@@ -1,0 +1,10 @@
+platform: nederlandse_spoorwegen
+email: !secret ns_user
+password: !secret ns_password
+routes:
+  - name: Harderwijk-Amersfoort
+    from: Hd
+    to: Amf
+  - name: Amersfoort-Harderwijk
+    from: Amf
+    to: Hd

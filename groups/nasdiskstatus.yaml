@@ -1,0 +1,10 @@
+name: Nas Disk Info
+icon: mdi:harddisk
+entities:
+  - sensor.status_smart_sda
+  - sensor.status_smart_sdb
+  - sensor.status_smart_sdc
+  - sensor.status_smart_sdd
+  - sensor.status_smart_sde
+  - sensor.status_smart_sdf
+  - sensor.status_smart_sdg

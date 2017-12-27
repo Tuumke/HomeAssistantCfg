@@ -1,0 +1,4 @@
+alias: Show Log
+sequence:
+  - alias: Show-Log
+    service: logbook.log

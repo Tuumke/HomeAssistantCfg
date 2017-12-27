@@ -1,0 +1,13 @@
+platform: template
+sensors:
+  fritzboxupload:
+    friendly_name: "FritzBox Upload"
+    unit_of_measurement: 'MB/s'
+    icon_template: mdi:upload
+    value_template: >-
+      {%- set fritzbox_up = (states.sensor.fritz_netmonitor.attributes.transmission_rate_up/(1024*1024)) | default(0) | float -%}
+      {%- if fritzbox_up < 0.1 -%}
+        {{ fritzbox_up | round(2) }}
+      {%- else -%}
+        {{ fritzbox_up | round(1) }}
+      {%- endif -%}

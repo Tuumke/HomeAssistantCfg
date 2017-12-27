@@ -1,0 +1,6 @@
+name: Nas Disk Info
+icon: mdi:harddisk
+entities:
+  - sensor.status_volume_1
+  - sensor.used_space_volume_1
+  - sensor.volume_used_volume_1

@@ -1,0 +1,8 @@
+name: Nas
+view: yes
+icon: mdi:harddisk
+entities:
+  - group.nasperformance
+  - group.nastraffic
+  - group.nasdiskstatus
+  - group.nasstorageinfo

@@ -1,0 +1,5 @@
+name: Nas Performance
+icon: mdi:memory
+entities:
+  - sensor.cpu_load_total
+  - sensor.memory_usage_real

@@ -1,0 +1,120 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 52.348581
+  longitude: 5.643363
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 1
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Amsterdam
+  # Customization file
+  customize: !include customize.yaml
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  api_password: !secret http_password
+  base_url: web.tuumke.nl:8123
+  ssl_certificate: /config/fullchain.pem
+  ssl_key: /config/privkey.pem
+
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+# Text to speech
+tts:
+  - platform: google
+
+influxdb:
+  host: 127.0.0.1
+
+group: !include_dir_named groups
+automation: !include_dir_list automations
+#script: !include scripts.yaml
+script: !include_dir_named scripts
+sensor: !include_dir_list sensors
+shell_command: !include shell_commands.yaml
+
+
+mqtt:
+  broker: 192.168.3.32
+  username: !secret mqtt_user
+  password: !secret mqtt_pass
+  discovery: true
+  discovery_prefix: homeassistant
+
+device_tracker:
+  - platform: fritz
+    host: 192.168.3.1
+    user: !secret fritz_user
+    password: !secret fritz_pass
+    consider_home: 180
+    track_new_devices: yes
+  - platform: owntracks
+    max_gps_accuracy: 200
+    waypoints: true
+
+
+zone:
+  - name: WerkTijmen
+    latitude: 52.1520427
+    longitude: 5.3779948
+    radius: 100
+    icon: mdi:worker
+
+  - name: StationAmersfoort
+    latitude: 52.1533953
+    longitude: 5.3718104
+    radius: 100
+    icon: mdi:train
+
+  - name: StationHarderwijk
+    latitude: 52.3378367
+    longitude: 5.6181872
+    radius: 300
+    icon: mdi:train
+
+media_player:
+  - platform: kodi
+    host: 192.168.3.60
+    name: boven
+    username: !secret kodi_user
+    password: !secret kodi_password
+
+  - platform: kodi
+    host: 192.168.3.130
+    name: beneden
+    username: !secret kodi_user
+    password: !secret kodi_password
+
+notify:
+  - name: PushBullet
+    platform: pushbullet
+    api_key: !secret pbapi

@@ -1,0 +1,243 @@
+
+osmc:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:A9:B9:24
+  name: osmc
+  picture:
+  track: true
+  vendor: Raspberry Pi Foundation
+
+chromecast:
+  hide_if_away: false
+  icon:
+  mac: 6C:AD:F8:D2:E9:09
+  name: Chromecast
+  picture:
+  track: true
+  vendor: AzureWave Technology Inc.
+
+nas:
+  hide_if_away: false
+  icon:
+  mac: 00:50:56:45:67:89
+  name: NAS
+  picture:
+  track: true
+  vendor: unknown
+
+suus:
+  hide_if_away: false
+  icon: mdi:android
+  mac: 84:29:99:49:FA:7C
+  name: Suus
+  picture:
+  track: true
+  vendor: unknown
+
+fritzbox:
+  hide_if_away: false
+  icon:
+  mac: 34:81:C4:0D:08:D3
+  name: fritz.box
+  picture:
+  track: true
+  vendor: unknown
+
+raspi:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:2B:48:82
+  name: raspi
+  picture:
+  track: true
+  vendor: unknown
+
+chromecast_2:
+  hide_if_away: false
+  icon:
+  mac: 64:66:B3:F4:19:87
+  name: Chromecast
+  picture:
+  track: true
+  vendor: TP-LINK TECHNOLOGIES CO.,LTD.
+
+tijmen_mobtijmen:
+  hide_if_away: false
+  icon: mdi:android
+  mac:
+  name: tijmen
+  picture:
+  track: true
+  vendor:
+
+huaweip8:
+  hide_if_away: false
+  icon:
+  mac: 1C:67:58:18:1D:5F
+  name: HUAWEI-P8
+  picture:
+  track: true
+  vendor: HUAWEI TECHNOLOGIES CO.,LTD
+
+android78d4050508190271:
+  hide_if_away: false
+  icon:
+  mac: 50:F0:D3:FA:D5:2C
+  name: android-78d4050508190271
+  picture:
+  track: true
+  vendor: Samsung Electronics Co.,Ltd
+
+huaweip9plus:
+  hide_if_away: false
+  icon:
+  mac: BC:75:74:69:04:7D
+  name: HUAWEI-P9-Plus
+  picture:
+  track: true
+  vendor: HUAWEI TECHNOLOGIES CO.,LTD
+
+ipadvantijmen:
+  hide_if_away: false
+  icon:
+  mac: 8C:29:37:DC:00:65
+  name: iPad-van-Tijmen
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+pc192168381:
+  hide_if_away: false
+  icon:
+  mac: 00:1F:D0:21:F5:8A
+  name: PC-192-168-3-81
+  picture:
+  track: true
+  vendor: GIGA-BYTE TECHNOLOGY CO.,LTD.
+
+tuumke:
+  hide_if_away: false
+  icon:
+  mac: C8:60:00:CB:65:A8
+  name: Tuumke
+  picture:
+  track: true
+  vendor: ASUSTek COMPUTER INC.
+
+iphonevantijmen:
+  hide_if_away: false
+  icon:
+  mac: 28:E1:4C:98:92:63
+  name: iPhonevanTijmen
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+iphonese:
+  hide_if_away: false
+  icon:
+  mac: BC:EC:5D:E8:29:7D
+  name: iPhone-SE
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+desktop1d9t2r9:
+  hide_if_away: false
+  icon:
+  mac: AC:81:12:B9:86:B2
+  name: DESKTOP-1D9T2R9
+  picture:
+  track: true
+  vendor: Gemtek Technology Co., Ltd.
+
+android1da9aa62eb21c4ac:
+  hide_if_away: false
+  icon:
+  mac: 80:65:6D:36:10:CF
+  name: android-1da9aa62eb21c4ac
+  picture:
+  track: true
+  vendor: unknown
+
+iphonevarenbeek:
+  hide_if_away: false
+  icon:
+  mac: 4C:57:CA:1E:91:0F
+  name: iPhonevarenbeek
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+tuumke_2:
+  hide_if_away: false
+  icon:
+  mac: 9C:D3:6D:15:62:60
+  name: Tuumke
+  picture:
+  track: true
+  vendor: NETGEAR
+
+samsunggalaxys7:
+  hide_if_away: false
+  icon:
+  mac: AC:5F:3E:CD:CF:49
+  name: Samsung-Galaxy-S7
+  picture:
+  track: true
+  vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
+
+pc192168327:
+  hide_if_away: false
+  icon:
+  mac: C0:41:F6:88:82:F3
+  name: PC-192-168-3-27
+  picture:
+  track: true
+  vendor: LG ELECTRONICS INC
+
+dndirk:
+  hide_if_away: false
+  icon:
+  mac: E0:5F:45:1F:2F:EE
+  name: dn-Dirk
+  picture:
+  track: true
+  vendor: unknown
+
+pc169254199204:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:FC:EC:71
+  name: PC-169-254-199-204
+  picture:
+  track: true
+  vendor: unknown
+
+philipshue:
+  hide_if_away: false
+  icon:
+  mac: 00:17:88:7A:AE:ED
+  name: Philips-hue
+  picture:
+  track: true
+  vendor: Philips Lighting BV
+
+d46e0ed98a34:
+  hide_if_away: false
+  icon:
+  mac: D4:6E:0E:D9:8A:34
+  name: d46e0ed98a34
+  picture:
+  track: true
+  vendor: TP-LINK TECHNOLOGIES CO.,LTD.
+
+tpver_701111_160908_901:
+  hide_if_away: false
+  icon:
+  mac: D4:6E:0E:D9:8B:21
+  name: tpver 701111 160908 901
+  picture:
+  track: true
+  vendor: unknown

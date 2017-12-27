@@ -1,0 +1,9 @@
+name: Debug
+icon: mdi:settings
+view: yes
+entities:
+  - script.restart_home_assistant
+  - script.reload_automation
+  - script.reload_group
+  - script.reload_core
+  - script.show_log

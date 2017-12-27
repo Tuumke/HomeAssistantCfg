@@ -1,0 +1,7 @@
+name: Treinen
+view: yes
+icon: mdi:train
+entities:
+  - automation.vertrektijd_trein_naar_amersfoort
+  - automation.vertrektijd_trein_naar_harderwijk
+  - group.treinenvertrektijden

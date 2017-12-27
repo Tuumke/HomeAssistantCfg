@@ -1,0 +1,4 @@
+alias: Reload Automations
+sequence:
+  - alias: Reload-Automations
+    service: automation.reload

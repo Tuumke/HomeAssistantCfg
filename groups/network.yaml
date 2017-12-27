@@ -1,0 +1,8 @@
+name: Network
+view: yes
+icon: mdi:access-point-network
+entities:
+  - sensor.fritz_netmonitor
+  - group.fritzboxinfo
+  - group.networktorrents
+  - group.networksabnzbd
